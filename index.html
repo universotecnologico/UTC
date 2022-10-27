@@ -30,11 +30,13 @@ https://templatemo.com/tm-560-astro-motion
     <video autoplay loop hidden id="myVideo">
       <source src="video/cali.mp4" type="video/mp4">
   </video>
-  <audio controls autoplay loop playsinline preload="auto">
+  <iframe src="video/cali.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+  </iframe> 
+  <!-- <audio autoplay controls muted loop playsinline preload="auto" id="myVideo">
     <source src="video/cali.ogg" type="audio/ogg">
     <source src="video/cali.mp3" type="audio/mpeg">
     <source src="video/cali.wav" type="audio/wav">
- </audio>
+ </audio> -->
   <script>
    let my_video = document.getElementById("myVideo");
    my_video.muted = true;
