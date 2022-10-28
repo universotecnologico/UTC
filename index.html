@@ -30,12 +30,7 @@ https://templatemo.com/tm-560-astro-motion
     <video autoplay loop hidden muted id="myVideo">
       <source src="video/cali.mp4" type="video/mp4">
   </video>
-  <!-- <iframe src="video/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-  <audio id="player" autoplay loop>
-    <source src="video/cali.ogg" type="audio/ogg">
-    <source src="video/cali.mp3" type="audio/mpeg">
-    <source src="video/cali.wav" type="audio/wav">
-  </audio> -->
+  <video src="video/cali.mp4" onloadedmetadata="this.muted = true" playsinline autoplay muted loop></video>
   <!-- <audio autoplay controls muted loop playsinline preload="auto" id="myVideo">
     <source src="video/cali.ogg" type="audio/ogg">
     <source src="video/cali.mp3" type="audio/mpeg">
@@ -46,7 +41,7 @@ https://templatemo.com/tm-560-astro-motion
    my_video.muted = true;
    my_video.play();
    my_video.muted = false;
-  </script>
+   </script>
     
     <div class="page-container">
       <div class="container-fluid">
