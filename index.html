@@ -27,21 +27,20 @@ https://templatemo.com/tm-560-astro-motion
     <video autoplay muted loop id="bg-video">
         <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
     </video>
-    <video autoplay loop hidden muted id="myVideo">
+    <video controls autoplay loop muted id="myVideo">
       <source src="video/cali.mp4" type="video/mp4">
   </video>
-  <!-- <audio autoplay controls muted loop playsinline preload="auto" id="myVideo">
+  <audio autoplay controls>
     <source src="video/cali.ogg" type="audio/ogg">
     <source src="video/cali.mp3" type="audio/mpeg">
     <source src="video/cali.wav" type="audio/wav">
- </audio> -->
+ </audio>
   <script>
    let my_video = document.getElementById("myVideo");
    my_video.muted = true;
-   my_video.play();
+   my_video.play(myVideo);
    my_video.muted = false;
    </script>
-    
     <div class="page-container">
       <div class="container-fluid">
         <div class="row">
